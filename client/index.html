@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebGetAndPost Example</a>
+        </div>
+    </div>
+</nav>
+
+
+<div id="loaderDiv" loader>
+    <img src="img/loading.gif" class="ajax-loader"/>
+</div>
+
+<div class="container-fluid" style="margin-top: 10%">
+
+    <ng-view></ng-view>
+</div>
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+
+
+<script src="module.js"></script>
+
+<!--
+* Module Core
+-->
+<script src="core/module.js"></script>
+<script src="core/config.js"></script>
+<script src="core/interceptor.js"></script>
+<script src="core/directive.js"></script>
+<!--
+* Module getAndPost
+-->
+<script src="getAndPost/module.js"></script>
+<script src="getAndPost/constant.js"></script>
+<script src="getAndPost/config.js"></script>
+<script src="getAndPost/service.js"></script>
+<script src="getAndPost/ctrl.js"></script>
+
+</body>
+</html>
