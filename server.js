@@ -9,5 +9,5 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(express.static(__dirname + '/client'));
 route(app);
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log("App listening on port 3000");
